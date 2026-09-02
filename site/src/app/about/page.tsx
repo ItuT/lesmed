@@ -76,6 +76,13 @@ export default function AboutPage() {
                 <p className="mt-1 text-sm text-brand-500">{m.qualifications}</p>
                 <p className="mt-2 font-semibold text-brand-700">{m.role}</p>
                 <p className="mt-4 leading-relaxed text-brand-700">{m.bio}</p>
+                <a
+                  href={`mailto:${m.email}`}
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600 hover:text-brand-800"
+                >
+                  <Icon name="mail" className="h-4 w-4" />
+                  {m.email}
+                </a>
               </article>
             ))}
           </div>

@@ -22,7 +22,7 @@ export const site = {
   },
   whatsapp:
     "https://wa.me/27785316460?text=Hello%20Lesmed%2C%20I%27d%20like%20to%20book%20an%20appointment.",
-  email: "lesmedhealthcentre@gmail.com",
+  email: "dr.lesofe@lesmedhealth.co.za",
   instagram: "lesmed_community_health",
   instagramUrl: "https://www.instagram.com/lesmed_community_health",
   googleMapsShare: "https://share.google/MxPbKmBLqHnP8UZPU",
@@ -116,6 +116,7 @@ export const team = [
     name: "Dr. R.E Lesofe",
     qualifications: "MBChB (Pret)",
     role: "Medical Practitioner · Founder & Director",
+    email: "dr.lesofe@lesmedhealth.co.za",
     bio: "Dr. Lesofe founded Lesmed Community Health Centre to bring quality, affordable healthcare closer to the people of Verena and the surrounding communities.",
   },
   {
@@ -123,6 +124,7 @@ export const team = [
     qualifications:
       "BSc, BSc (Hons) (Pret), PG Dip Management (NWU), MBA candidate (SU)",
     role: "Medical Scientist · Co-Founder & CEO",
+    email: "p.lesofe@lesmedhealth.co.za",
     bio: "As Medical Scientist and CEO, Mrs. Manyaka-Lesofe leads the centre's operations and its laboratory services, combining scientific rigour with a passion for community health.",
   },
 ];
