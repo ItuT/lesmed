@@ -52,15 +52,15 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mx-auto w-full max-w-sm">
-            <div className="rounded-3xl border border-brand-100 bg-white p-8 shadow-xl shadow-brand-200/40">
+          <div className="mx-auto w-full max-w-sm md:max-w-none">
+            <div className="overflow-hidden rounded-3xl border border-brand-100 shadow-xl shadow-brand-200/50">
               <Image
-                src="/images/logo-trimmed.jpg"
-                alt="Lesmed Community Health Centre logo"
-                width={640}
-                height={560}
+                src="/images/mission.jpg"
+                alt="Two smiling healthcare professionals at Lesmed Community Health Centre"
+                width={747}
+                height={934}
                 priority
-                className="w-full"
+                className="w-full object-cover"
               />
             </div>
           </div>
