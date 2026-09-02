@@ -55,10 +55,10 @@ export default function Home() {
           <div className="mx-auto w-full max-w-sm md:max-w-none">
             <div className="overflow-hidden rounded-3xl border border-brand-100 shadow-xl shadow-brand-200/50">
               <Image
-                src="/images/mission.jpg"
-                alt="Two smiling healthcare professionals at Lesmed Community Health Centre"
-                width={747}
-                height={934}
+                src="/images/founders.jpg"
+                alt="Dr. R.E Lesofe and Mrs. P Manyaka-Lesofe, founders of Lesmed Community Health Centre"
+                width={1281}
+                height={1220}
                 priority
                 className="w-full object-cover"
               />

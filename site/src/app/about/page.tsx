@@ -26,10 +26,10 @@ export default function AboutPage() {
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1fr_1.2fr]">
         <div className="mx-auto w-full max-w-sm overflow-hidden rounded-3xl border border-brand-100 shadow-lg shadow-brand-200/40 md:max-w-none">
           <Image
-            src="/images/mission.jpg"
-            alt="Two smiling healthcare professionals at Lesmed Community Health Centre"
-            width={747}
-            height={934}
+            src="/images/founders.jpg"
+            alt="Dr. R.E Lesofe and Mrs. P Manyaka-Lesofe, founders of Lesmed Community Health Centre"
+            width={1281}
+            height={1220}
             className="w-full object-cover"
           />
         </div>
