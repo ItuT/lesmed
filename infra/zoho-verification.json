@@ -1,0 +1,16 @@
+{
+  "Comment": "Zoho Mail domain ownership verification",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "lesmedhealth.co.za.",
+        "Type": "TXT",
+        "TTL": 300,
+        "ResourceRecords": [
+          { "Value": "\"zoho-verification=zb56556597.zmverify.zoho.com\"" }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "Comment": "Zoho Mail: MX, SPF (merged with verification TXT), DKIM",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "lesmedhealth.co.za.",
+        "Type": "MX",
+        "TTL": 3600,
+        "ResourceRecords": [
+          { "Value": "10 mx.zoho.com." },
+          { "Value": "20 mx2.zoho.com." },
+          { "Value": "50 mx3.zoho.com." }
+        ]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "lesmedhealth.co.za.",
+        "Type": "TXT",
+        "TTL": 300,
+        "ResourceRecords": [
+          { "Value": "\"zoho-verification=zb56556597.zmverify.zoho.com\"" },
+          { "Value": "\"v=spf1 include:zohomail.com ~all\"" }
+        ]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "zmail._domainkey.lesmedhealth.co.za.",
+        "Type": "TXT",
+        "TTL": 3600,
+        "ResourceRecords": [
+          { "Value": "\"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDWfivfgrHtseELH0+uN7VNOHXBiZEKJphOkT8ySCGLn0OtmHSSlHVXZMumoUktu9oZTjB+cw+51DQVl1I9ZurL5pQiq8c8vJxMkYdWL+KhuorNN9hDYYcGKYIJSHP57PlezWCYryPrGywY1WBLABAYNB86Za7hxwm+UPsV5fmpbQIDAQAB\"" }
+        ]
+      }
+    }
+  ]
+}
