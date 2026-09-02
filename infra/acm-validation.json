@@ -1,0 +1,16 @@
+{
+  "Comment": "ACM DNS validation for lesmed.motebo.co.za",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_22f7a117a03139a1ab206c6a0cf324a3.lesmed.motebo.co.za.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [
+          { "Value": "_7bd74bda3542734bba962d6dc9eb888e.jkddzztszm.acm-validations.aws." }
+        ]
+      }
+    }
+  ]
+}
