@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand browns sampled from the Lesmed logo */
+  --color-brand-50: #fbf7f1;
+  --color-brand-100: #f5ecdf;
+  --color-brand-200: #ead7bd;
+  --color-brand-300: #d9ba92;
+  --color-brand-400: #c19163;
+  --color-brand-500: #a76f40;
+  --color-brand-600: #8a5329;
+  --color-brand-700: #6e3a17;
+  --color-brand-800: #572e14;
+  --color-brand-900: #432310;
+  --color-brand-950: #2c1608;
+
+  --color-cream: #faf6ef;
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-heading), ui-serif, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-brand-900);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-brand-200);
+}
