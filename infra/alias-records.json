@@ -1,10 +1,10 @@
 {
-  "Comment": "Point lesmed.motebo.co.za at CloudFront",
+  "Comment": "Point lesmedhealth.co.za and www at CloudFront",
   "Changes": [
     {
       "Action": "UPSERT",
       "ResourceRecordSet": {
-        "Name": "lesmed.motebo.co.za.",
+        "Name": "lesmedhealth.co.za.",
         "Type": "A",
         "AliasTarget": {
           "HostedZoneId": "Z2FDTNDATAQYW2",
@@ -16,7 +16,31 @@
     {
       "Action": "UPSERT",
       "ResourceRecordSet": {
-        "Name": "lesmed.motebo.co.za.",
+        "Name": "lesmedhealth.co.za.",
+        "Type": "AAAA",
+        "AliasTarget": {
+          "HostedZoneId": "Z2FDTNDATAQYW2",
+          "DNSName": "d2khftm4k4qscm.cloudfront.net.",
+          "EvaluateTargetHealth": false
+        }
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "www.lesmedhealth.co.za.",
+        "Type": "A",
+        "AliasTarget": {
+          "HostedZoneId": "Z2FDTNDATAQYW2",
+          "DNSName": "d2khftm4k4qscm.cloudfront.net.",
+          "EvaluateTargetHealth": false
+        }
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "www.lesmedhealth.co.za.",
         "Type": "AAAA",
         "AliasTarget": {
           "HostedZoneId": "Z2FDTNDATAQYW2",

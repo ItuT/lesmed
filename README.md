@@ -1,13 +1,13 @@
 # Lesmed Community Health Centre — Website
 
-Website for [Lesmed Community Health Centre](https://lesmed.motebo.co.za), a
+Website for [Lesmed Community Health Centre](https://lesmedhealth.co.za), a
 community clinic in Verena, Mpumalanga, South Africa.
 Practice no. 1328034 · "Bringing Healthcare Closer to Home"
 
 ## Stack
 
 - [Next.js](https://nextjs.org) (App Router, static export) + Tailwind CSS + TypeScript
-- Hosted on AWS: S3 + CloudFront + ACM, DNS via Route 53 (`lesmed.motebo.co.za`)
+- Hosted on AWS: S3 + CloudFront + ACM, DNS via Route 53 (`lesmedhealth.co.za`)
 
 ## Structure
 

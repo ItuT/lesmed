@@ -1,7 +1,7 @@
 export const site = {
   name: "Lesmed Community Health Centre",
   shortName: "Lesmed",
-  url: "https://lesmed.motebo.co.za",
+  url: "https://lesmedhealth.co.za",
   tagline: "Bringing Healthcare Closer to Home",
   motto: "Quality Care. Compassionate Service. Healthier Community.",
   secondaryLine: "Quality Affordable Healthcare Starts Here",

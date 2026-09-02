@@ -1,14 +1,25 @@
 {
-  "Comment": "ACM DNS validation for lesmed.motebo.co.za",
+  "Comment": "ACM DNS validation for lesmedhealth.co.za and www",
   "Changes": [
     {
       "Action": "UPSERT",
       "ResourceRecordSet": {
-        "Name": "_22f7a117a03139a1ab206c6a0cf324a3.lesmed.motebo.co.za.",
+        "Name": "_e5df5d9ca01272c66ae5673fecd09d64.lesmedhealth.co.za.",
         "Type": "CNAME",
         "TTL": 300,
         "ResourceRecords": [
-          { "Value": "_7bd74bda3542734bba962d6dc9eb888e.jkddzztszm.acm-validations.aws." }
+          { "Value": "_d8a09e5d0e2ec3184dd47097de5fb470.jkddzztszm.acm-validations.aws." }
+        ]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_66201619251330af19ea763f378952e9.www.lesmedhealth.co.za.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [
+          { "Value": "_6464034670457e6e07832ffd62e48245.jkddzztszm.acm-validations.aws." }
         ]
       }
     }

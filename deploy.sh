@@ -9,4 +9,4 @@ DISTRIBUTION_ID=E33C8TTBASDBPN
 npm run build
 aws s3 sync out/ "s3://$BUCKET/" --delete
 aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION_ID" --paths "/*" --query 'Invalidation.{Id:Id,Status:Status}' --output table
-echo "Deployed. Live at https://lesmed.motebo.co.za"
+echo "Deployed. Live at https://lesmedhealth.co.za"
