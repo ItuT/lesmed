@@ -8,6 +8,7 @@ import {
   mission,
   initiatives,
   team,
+  staff,
 } from "@/lib/site";
 
 export default function Home() {
@@ -187,6 +188,33 @@ export default function Home() {
               <p className="mt-1 text-sm text-brand-500">{m.qualifications}</p>
               <p className="mt-2 font-semibold text-brand-700">{m.role}</p>
               <p className="mt-3 leading-relaxed text-brand-700">{m.bio}</p>
+            </div>
+          ))}
+          {staff.map((m) => (
+            <div
+              key={m.name}
+              className="grid items-center gap-6 rounded-2xl border border-brand-100 bg-white p-8 shadow-sm sm:grid-cols-[10rem_1fr] md:col-span-2"
+            >
+              <div className="mx-auto w-40 overflow-hidden rounded-2xl border border-brand-100">
+                <Image
+                  src={m.photo}
+                  alt={`${m.name}, ${m.role} at ${site.shortName}`}
+                  width={1405}
+                  height={1600}
+                  className="w-full object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="font-serif text-2xl text-brand-900">{m.name}</h3>
+                <p className="mt-2 font-semibold text-brand-700">{m.role}</p>
+                <p className="mt-3 leading-relaxed text-brand-700">{m.bio[0]}</p>
+                <Link
+                  href="/about"
+                  className="mt-4 inline-flex items-center gap-2 font-semibold text-brand-600 hover:text-brand-800"
+                >
+                  Meet {m.firstName} <Icon name="arrow" className="h-4 w-4" />
+                </Link>
+              </div>
             </div>
           ))}
         </div>
