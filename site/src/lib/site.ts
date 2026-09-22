@@ -129,6 +129,29 @@ export const team = [
   },
 ];
 
+export const staff = [
+  {
+    name: "Mr Cedric Ditshego",
+    firstName: "Cedric",
+    role: "Healthcare Support, Counselling & Patient Services Officer",
+    photo: "/images/cedric-ditshego.jpg",
+    bio: [
+      "With 18 years of experience across community health, counselling, clinical research and patient support, Cedric brings a wealth of experience and, most importantly, a genuine passion for people.",
+      "He has worked as a Lead Research Counsellor at Ndlovu Research Centre, a counsellor/field worker at Ndlovu Medical Centre, and a care worker supporting patients living with dementia and Alzheimer's. His experience includes HIV counselling and testing, patient adherence and retention, health education, participant support and community-based follow-up.",
+      "He also holds training in HIV & AIDS Counselling and Testing, Basic Counselling and Psychotherapy, Good Clinical Practice, Home-Based Healthcare, First Aid and CPR, among other professional training.",
+    ],
+    callout: {
+      heading: "Because mental health matters too.",
+      text: "Sometimes people don't just need medicine. They need someone who will listen, understand, encourage and help them navigate their health journey.",
+    },
+    languages: ["English", "Sepedi", "isiNdebele", "isiZulu"],
+    languagesNote:
+      "helping us create a more comfortable and accessible environment for the diverse communities we serve.",
+    closing:
+      "We are building Lesmed to be a place where our patients feel seen, heard, respected and cared for. Welcome to Lesmed, Cedric!",
+  },
+];
+
 export const mission =
   "Our mission is simple: to make healthcare accessible, reliable, and inclusive, ensuring that every individual has the opportunity to live a healthier life.";
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Icon from "@/components/Icon";
-import { site, team, mission, initiatives } from "@/lib/site";
+import { site, team, staff, mission, initiatives } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -87,6 +87,65 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 md:py-20">
+        <h2 className="font-serif text-3xl text-brand-900 sm:text-4xl">
+          Caring for the Whole Person
+        </h2>
+        {staff.map((m) => (
+          <article
+            key={m.name}
+            className="mt-10 grid gap-10 md:grid-cols-[1fr_1.6fr] md:items-start"
+          >
+            <div className="mx-auto w-full max-w-sm overflow-hidden rounded-3xl border border-brand-100 shadow-lg shadow-brand-200/40 md:max-w-none">
+              <Image
+                src={m.photo}
+                alt={`${m.name}, ${m.role} at ${site.shortName}`}
+                width={1405}
+                height={1600}
+                className="w-full object-cover"
+              />
+            </div>
+            <div>
+              <h3 className="font-serif text-2xl text-brand-900 sm:text-3xl">
+                {m.name}
+              </h3>
+              <p className="mt-2 font-semibold text-brand-700">{m.role}</p>
+              {m.bio.map((p) => (
+                <p key={p} className="mt-4 leading-relaxed text-brand-700">
+                  {p}
+                </p>
+              ))}
+              <div className="mt-8 rounded-2xl border-l-4 border-brand-600 bg-white p-6 shadow-sm">
+                <p className="font-serif text-xl italic text-brand-900">
+                  {m.callout.heading}
+                </p>
+                <p className="mt-2 leading-relaxed text-brand-700">
+                  {m.callout.text}
+                </p>
+              </div>
+              <p className="mt-6 leading-relaxed text-brand-700">
+                {m.firstName} is fluent in{" "}
+                {m.languages.slice(0, -1).join(", ")} and{" "}
+                {m.languages[m.languages.length - 1]}, {m.languagesNote}
+              </p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {m.languages.map((l) => (
+                  <span
+                    key={l}
+                    className="rounded-full bg-brand-100 px-3 py-1 text-sm font-semibold text-brand-800"
+                  >
+                    {l}
+                  </span>
+                ))}
+              </div>
+              <p className="mt-6 font-semibold leading-relaxed text-brand-800">
+                {m.closing}
+              </p>
+            </div>
+          </article>
+        ))}
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-14 text-center sm:px-6">
