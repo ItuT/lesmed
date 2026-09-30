@@ -62,14 +62,15 @@ export default function AboutPage() {
                 key={m.name}
                 className="rounded-3xl border border-brand-100 bg-cream p-8 md:p-10"
               >
-                <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-brand-700 font-serif text-xl text-white">
-                  {m.name
-                    .replace(/^(Dr|Mrs|Mr|Ms)\.? /, "")
-                    .split(/[ -]/)
-                    .map((p) => p[0])
-                    .slice(0, 2)
-                    .join("")}
-                </span>
+                <div className="mx-auto w-40 overflow-hidden rounded-2xl border border-brand-100 shadow-md sm:mx-0">
+                  <Image
+                    src={m.photo}
+                    alt={`${m.name}, ${m.role} at ${site.shortName}`}
+                    width={640}
+                    height={800}
+                    className="aspect-[4/5] w-full object-cover"
+                  />
+                </div>
                 <h3 className="mt-5 font-serif text-2xl text-brand-900">
                   {m.name}
                 </h3>

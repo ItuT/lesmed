@@ -103,6 +103,7 @@ export default function Footer() {
           <nav className="flex gap-4" aria-label="Footer">
             <Link href="/services" className="hover:text-white">Services</Link>
             <Link href="/about" className="hover:text-white">About</Link>
+            <Link href="/events" className="hover:text-white">Events</Link>
             <Link href="/contact" className="hover:text-white">Contact</Link>
           </nav>
         </div>

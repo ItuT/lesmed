@@ -114,6 +114,7 @@ export const alsoOffered = [
 export const team = [
   {
     name: "Dr. R.E Lesofe",
+    photo: "/images/re-lesofe.jpg",
     qualifications: "MBChB (Pret)",
     role: "Medical Practitioner · Founder & Director",
     email: "dr.lesofe@lesmedhealth.co.za",
@@ -121,6 +122,7 @@ export const team = [
   },
   {
     name: "Mrs. P Manyaka-Lesofe",
+    photo: "/images/p-manyaka-lesofe.jpg",
     qualifications:
       "BSc, BSc (Hons) (Pret), PG Dip Management (NWU), MBA candidate (SU)",
     role: "Medical Scientist · Co-Founder & CEO",
@@ -157,3 +159,47 @@ export const mission =
 
 export const initiatives =
   "We empower rural communities through proactive health education and preventive care programs. Our initiatives are designed to promote wellness and ensure that every member of our community has access to the knowledge and resources needed for a healthier future.";
+
+export const events = [
+  {
+    slug: "diabetes-book-launch-2026",
+    kind: "Book Launch & Health Talk",
+    title: "Diabetes: The Load Shedding of Our Health",
+    subtitle: "Raising Awareness | Empowering Communities",
+    tagline: "Knowledge today for a healthier tomorrow!",
+    date: "Saturday, 31 October 2026",
+    isoDate: "2026-10-31",
+    venue: `${site.address.street}, ${site.address.town}, ${site.address.province}`,
+    admission: "RSVP only · Maximum 100 participants",
+    rsvpUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLSf3wmRBL-PY0seYBFIkYqAt1UXelIMOp3f3TFvLOmBRpFFVtA/viewform",
+    poster: "/images/event-diabetes-poster.jpg",
+    speakersPoster: "/images/event-diabetes-speakers.jpg",
+    themes: [
+      { icon: "check", label: "Understand Diabetes" },
+      { icon: "heart", label: "Make Healthier Choices" },
+      { icon: "shield", label: "Stronger Communities" },
+      { icon: "stethoscope", label: "A Healthier South Africa" },
+    ],
+    programme: [
+      "Author conversation",
+      "Keynote",
+      "Community Q&A",
+      "Health screening",
+      "HbA1c testing",
+      "Accu-Chek demonstration",
+    ],
+    speakers: [
+      {
+        name: "Dr. Ralits'ili Emile Lesofe",
+        role: "Independent Medical Practitioner · HPCSA Reg: MP 0873330",
+        bio: "Dr. Ralits'ili Emile Lesofe is an Independent Medical Practitioner with extensive experience across public and private healthcare settings, including paediatrics, general medicine and primary care. His career spans Philadelphia Hospital, Botshabelo District Hospital and Witbank Tertiary Hospital, where he developed skills in patient management, emergency care and multidisciplinary collaboration. As Founder and Director of Lesmed Community Health Centre in Verena, Mpumalanga, he is driven by a passion to bring quality, affordable healthcare to rural communities. He is certified in Basic Life Support, Advanced Cardiovascular Life Support, ECG interpretation, ultrasound and basic surgical skills.",
+      },
+      {
+        name: "Dr. Rendani I. Manenzhe, PhD",
+        role: "Medical Scientist · Author · Public Health Advocate",
+        bio: "Dr. Rendani I. Manenzhe is a South African medical scientist, author and public health advocate dedicated to improving health outcomes through research, education and community engagement. He earned an MSc in Medicine and a PhD in Medical Microbiology from the University of Cape Town (UCT), where he developed expertise in infectious diseases, pathogen research and antimicrobial resistance. His work has contributed to the scientific understanding of how to prevent and control infectious diseases, particularly in vulnerable communities. In 2026, he published Diabetes: The Load Shedding of Our Health, a practical guide to diabetes awareness, management and prevention in South Africa.",
+      },
+    ],
+  },
+];

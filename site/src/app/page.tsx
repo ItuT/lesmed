@@ -9,11 +9,30 @@ import {
   initiatives,
   team,
   staff,
+  events,
 } from "@/lib/site";
 
 export default function Home() {
   return (
     <>
+      {/* Upcoming event banner */}
+      {events.map((e) => (
+        <Link
+          key={e.slug}
+          href={`/events#${e.slug}`}
+          className="block bg-brand-700 text-white transition-colors hover:bg-brand-800"
+        >
+          <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-3 gap-y-1 px-4 py-3 text-center text-sm sm:px-6">
+            <span className="rounded-full bg-white/15 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wider">
+              {e.kind}
+            </span>
+            <span className="font-semibold">{e.title}</span>
+            <span className="text-brand-100"><span className="hidden sm:inline">· </span>{e.date} · RSVP now</span>
+            <Icon name="arrow" className="h-4 w-4" />
+          </div>
+        </Link>
+      ))}
+
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-16 pt-14 sm:px-6 md:grid-cols-[1.2fr_1fr] md:pb-24 md:pt-20">
@@ -184,6 +203,15 @@ export default function Home() {
               key={m.name}
               className="rounded-2xl border border-brand-100 bg-white p-8 shadow-sm"
             >
+              <div className="mb-5 w-32 overflow-hidden rounded-2xl border border-brand-100">
+                <Image
+                  src={m.photo}
+                  alt={`${m.name}, ${m.role} at ${site.shortName}`}
+                  width={640}
+                  height={800}
+                  className="aspect-[4/5] w-full object-cover"
+                />
+              </div>
               <h3 className="font-serif text-2xl text-brand-900">{m.name}</h3>
               <p className="mt-1 text-sm text-brand-500">{m.qualifications}</p>
               <p className="mt-2 font-semibold text-brand-700">{m.role}</p>
