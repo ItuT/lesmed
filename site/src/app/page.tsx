@@ -211,13 +211,13 @@ export default function Home() {
               key={m.name}
               className="rounded-2xl border border-brand-100 bg-white p-8 shadow-sm"
             >
-              <div className="mb-5 w-32 overflow-hidden rounded-2xl border border-brand-100">
+              <div className="mb-5 w-40 overflow-hidden rounded-2xl border border-brand-100">
                 <Image
                   src={m.photo}
                   alt={`${m.name}, ${m.role} at ${site.shortName}`}
                   width={640}
                   height={800}
-                  className="aspect-[4/5] w-full object-cover"
+                  className="aspect-[4/5] w-full object-cover object-top"
                 />
               </div>
               <h3 className="font-serif text-2xl text-brand-900">{m.name}</h3>

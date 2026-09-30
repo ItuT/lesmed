@@ -62,13 +62,13 @@ export default function AboutPage() {
                 key={m.name}
                 className="rounded-3xl border border-brand-100 bg-cream p-8 md:p-10"
               >
-                <div className="mx-auto w-40 overflow-hidden rounded-2xl border border-brand-100 shadow-md sm:mx-0">
+                <div className="mx-auto w-48 overflow-hidden rounded-2xl border border-brand-100 shadow-md sm:mx-0">
                   <Image
                     src={m.photo}
                     alt={`${m.name}, ${m.role} at ${site.shortName}`}
                     width={640}
                     height={800}
-                    className="aspect-[4/5] w-full object-cover"
+                    className="aspect-[4/5] w-full object-cover object-top"
                   />
                 </div>
                 <h3 className="mt-5 font-serif text-2xl text-brand-900">
