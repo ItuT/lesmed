@@ -20,15 +20,23 @@ export default function Home() {
         <Link
           key={e.slug}
           href={`/events#${e.slug}`}
-          className="block bg-brand-700 text-white transition-colors hover:bg-brand-800"
+          className="event-banner block text-white"
         >
-          <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-3 gap-y-1 px-4 py-3 text-center text-sm sm:px-6">
-            <span className="rounded-full bg-white/15 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wider">
+          <div className="relative mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-4 gap-y-2 px-4 py-3 text-center sm:px-6">
+            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="event-banner-dot absolute inline-flex h-full w-full rounded-full bg-amber-300" />
+              </span>
               {e.kind}
             </span>
-            <span className="font-semibold">{e.title}</span>
-            <span className="text-brand-100"><span className="hidden sm:inline">· </span>{e.date} · RSVP now</span>
-            <Icon name="arrow" className="h-4 w-4" />
+            <span className="font-serif text-base font-semibold sm:text-lg">
+              {e.title}
+            </span>
+            <span className="text-sm text-brand-100">{e.date}</span>
+            <span className="event-banner-cta inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-1.5 text-sm font-bold text-brand-800">
+              RSVP now
+              <Icon name="arrow" className="h-4 w-4" />
+            </span>
           </div>
         </Link>
       ))}

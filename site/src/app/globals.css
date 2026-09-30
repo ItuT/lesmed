@@ -33,3 +33,76 @@ body {
 ::selection {
   background: var(--color-brand-200);
 }
+
+/* Event banner: shimmer sweep + pulsing dot/halo */
+@keyframes banner-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes banner-halo {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes banner-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.7);
+  }
+}
+
+.event-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-800),
+    var(--color-brand-600),
+    var(--color-brand-800)
+  );
+}
+
+.event-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.28) 50%,
+    transparent 70%
+  );
+  animation: banner-shimmer 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.event-banner-dot {
+  animation: banner-dot 1.2s ease-in-out infinite;
+}
+
+.event-banner-cta {
+  animation: banner-halo 1.8s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .event-banner::after,
+  .event-banner-dot,
+  .event-banner-cta {
+    animation: none;
+  }
+}
